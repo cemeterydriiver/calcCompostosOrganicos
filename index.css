@@ -1,46 +1,68 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
 }
 
 h1 {
   text-align: center;
+  margin-top: 50px;
 }
 
-p {
-  margin-top: 0;
+form {
+  margin: 50px auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-input[type=text] {
-  padding: 5px;
-  font-size: 16px;
+label {
+  font-weight: bold;
 }
 
-button {
-  padding: 5px 10px;
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+button[type="button"] {
   background-color: #4CAF50;
-  color: white;
   border: none;
-  border-radius: 3px;
-  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
-}
-
-button:hover {
-  background-color: #3e8e41;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
 }
 
 #resultado {
-  margin-top: 20px;
+  text-align: center;
   font-size: 20px;
+  margin-top: 50px;
 }
-footer{
-    color: rgb(160, 160, 160);
-    padding-top: 400px;
-    padding-left: 570px;
-}
-div{
-    padding-left: 500px;
-    padding-top: 10px;
+
+@media screen and (max-width: 600px) {
+  form {
+    margin-top: 25px;
+  }
+
+  input[type="text"] {
+    max-width: none;
+  }
+
+  button[type="button"] {
+    max-width: none;
+  }
 }
