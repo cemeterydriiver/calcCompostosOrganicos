@@ -4,10 +4,17 @@ body {
   margin: 0;
   padding: 0;
 }
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 h1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 150px;
+  margin: 0 0 50px;
 }
 
 form {
@@ -51,13 +58,16 @@ button[type="button"] {
   text-align: center;
   font-size: 20px;
   margin-top: 50px;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
   form {
     margin-top: 25px;
   }
-
+  .container{
+    padding: 0 20px;
+  }
   input[type="text"] {
     max-width: none;
   }
@@ -65,4 +75,10 @@ button[type="button"] {
   button[type="button"] {
     max-width: none;
   }
+}
+
+footer{
+  color: rgb(190, 190, 190);
+  margin-left: 650px;
+  margin-top: 400px;
 }
